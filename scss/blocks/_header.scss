@@ -1,0 +1,97 @@
+.header__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 43px 0 45px 0;
+}
+
+// ------------ Site-logo ------------
+
+.header__logo-img{
+    width: 236px;
+    height: 26px;
+}
+
+// ----------- Site-nav -----------
+
+.header__nav--list{
+    display: flex;
+    align-items: center;
+}
+
+.header__nav--item{
+    list-style-type: none;
+    transition: all 0.3s ease;
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.header__nav--item:not(:first-child){
+    margin-left: 10px;
+}
+
+.header__nav--item:hover{
+    transform: scale(1.05);
+    background-color: rgb(107, 107, 107);
+}
+
+.header__nav--item:hover .header__nav--link{
+    color: #fff;
+}
+
+.header__nav--link{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    color: #83888F;
+    transition: all 0.3s ease;
+}
+
+// ---------- Site-button -----------
+
+.header__menu{
+    border: none;
+    background-color: #fff;
+    display: none;
+}
+
+.header__menu--img{
+    width: 18px;
+    height: 15px;
+}
+
+
+// ------------- Responsive-part in header --------------
+
+
+@media only screen and (max-width: 992px){
+
+    .header__inner{
+        padding: 40px 0 42px 0;
+    }
+
+}
+
+@media only screen and (max-width: 660px){
+
+    .header__inner{
+        padding: 32px 0 36px 0;
+    }
+
+    .header__logo-img{
+        width: 163px;
+        height: 18px;
+    }
+
+    .header__nav{
+        display: none;
+    }
+
+    .header__menu{
+        display: block;
+    }
+
+}
