@@ -32,12 +32,11 @@
 }
 
 .header__nav--item:hover{
-    transform: scale(1.05);
-    background-color: rgb(107, 107, 107);
+    background-color: rgb(224, 224, 224);
 }
 
 .header__nav--item:hover .header__nav--link{
-    color: #fff;
+    color: #000;
 }
 
 .header__nav--link{
@@ -82,7 +81,7 @@
         position: relative;
     }
 
-    .header__inner--open .header__nav{
+    .header__inner--open > .header__nav{
         display: block;
     }
     

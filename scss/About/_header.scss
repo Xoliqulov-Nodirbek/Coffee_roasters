@@ -1,0 +1,119 @@
+.header__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 43px 0 45px 0;
+}
+
+// ------------ Site-logo ------------
+
+.header__logo-img{
+    width: 236px;
+    height: 26px;
+}
+
+// ----------- Site-nav -----------
+
+.header__nav--list{
+    display: flex;
+    align-items: center;
+}
+
+.header__nav--item{
+    list-style-type: none;
+    transition: all 0.3s ease;
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.header__nav--item:not(:first-child){
+    margin-left: 10px;
+}
+
+.header__nav--item:hover{
+    background-color: rgb(224, 224, 224);
+}
+
+.header__nav--item:hover .header__nav--link{
+    color: #000;
+}
+
+.header__nav--link{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    color: #83888F;
+    transition: all 0.3s ease;
+}
+
+// ---------- Site-button -----------
+
+.header__menu{
+    border: none;
+    background-color: #fff;
+    display: none;
+}
+
+.header__menu--img{
+    width: 18px;
+    height: 15px;
+}
+
+
+// ------------- Responsive-part in header --------------
+
+
+@media only screen and (max-width: 992px){
+
+    .header__inner{
+        padding: 40px 0 42px 0;
+    }
+
+}
+
+@media only screen and (max-width: 660px){
+
+    .header__inner{
+        padding: 32px 0 36px 0;
+        position: relative;
+    }
+
+    .header__inner--open .header__nav{
+        display: block;
+    }
+
+    .header__logo-img{
+        width: 163px;
+        height: 18px;
+    }
+    .header__nav{
+        display: none;
+        position: absolute;
+        width: 100%;    
+        top: 80px;
+        background-image: linear-gradient(180deg,  #FEFCF7, #ddd8d8);
+        box-shadow: 0 100px 50px 50px #d8d3d3;
+    }
+
+    .header__nav--list{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .header__nav--link{
+        font-family: Fraunces;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 32px;
+        text-align: center;
+        color: #333D4B;
+    }
+
+    .header__menu{
+        display: block;
+    }
+
+}

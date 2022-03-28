@@ -1,0 +1,142 @@
+.footer__inner{
+    background: #2C343E;
+    padding: 48px 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    border-radius: 10px;
+}
+
+// ---- footer-logo ----
+
+.footer__logo--img{
+    width: 236px;
+    height: 26px;
+}
+
+// ---- footer-nav ----
+
+.footer__nav{
+    margin-left: -180px;
+}
+
+.footer__nav--list{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.footer__nav--item:not(:first-child){
+    margin-left: 32px;
+}
+
+.footer__nav--link{
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888F;
+    text-decoration: none;
+    
+    &:active{
+        color: #fff;
+    }
+}
+
+// ------- footer-right -------
+
+.footer__list{
+    display: flex;
+    align-items: center;
+}
+
+.footer__right--item{
+    list-style-type: none;
+}
+
+.footer__right--item:not(:first-child){
+    margin-left: 24px;
+}
+
+.footer__right--icon{
+    width: 24px;
+    height: 24px;
+}
+
+
+// ----------- Responsive-part in footer -----------
+
+
+@media only screen and (max-width: 1090px){
+    
+    .footer__inner{
+        padding: 55px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    // ---- footer-nav ----
+    
+    .footer__nav{
+        margin-left: 0;
+        padding: 30px 0 50px 0;
+    }
+
+    .footer__nav--list{
+        padding: 0;
+    }
+    
+    // ------- footer-right -------
+    
+    .footer__list{
+        margin: 0;
+    }
+
+    // ---------- footer-right -----------
+
+    .footer__list{
+        padding: 0;
+    }
+    
+}
+
+@media only screen and (max-width: 600px){
+    
+    .footer__inner{
+        padding: 55px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    // ---- footer-nav ----
+    
+    .footer__nav{
+        margin: 0;
+        padding: 50px 0;
+    }
+    
+    // ------- footer-right -------
+
+    .footer__nav--list{
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    .footer__nav--item:not(:first-child){
+        margin-top: 24px;
+        margin-left: 0;
+    }
+
+    // ---------- footer-right -----------
+
+    .footer__list{
+        padding: 0;
+    }
+
+}
+
+
+
+
